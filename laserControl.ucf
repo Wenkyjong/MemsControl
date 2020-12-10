@@ -1,0 +1,10 @@
+NET "clk_50" LOC = V10 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET rst_n                            LOC = N4 | IOSTANDARD = "LVCMOS15"; ## SW2 pushbutton
+##
+
+NET signal_angle                                 LOC = M11 | IOSTANDARD = "LVCMOS33"; ##  io 4
+NET signal_mid                                   LOC = N11 | IOSTANDARD = "LVCMOS33"; ##  io3
+NET laser                                        LOC = U16 | IOSTANDARD = "LVCMOS33"; ##  io6

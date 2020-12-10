@@ -1,0 +1,16 @@
+NET "sclk" LOC = V10 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET rst_n                            LOC = N4 | IOSTANDARD = "LVCMOS15"; ## SW2 pushbutton
+##
+
+########USB Uart SerialPin define#####################
+#NET rx                         	 	LOC = B2 | IOSTANDARD = "LVCMOS33";		  ## Uart RXD:U8_TXD
+NET tx                          	  LOC = C4 | IOSTANDARD = "LVCMOS33" ;		## Uart TXD:U8_RXD
+
+
+NET spi_clk                                 LOC = M11 | IOSTANDARD = "LVCMOS33"; ## black io 4
+NET spi_cs                                  LOC = N11 | IOSTANDARD = "LVCMOS33"; ## white io3
+NET spi_miso                                LOC = U16 | IOSTANDARD = "LVCMOS33"; ##gary  io6
+NET spi_mosi                                LOC = V16 | IOSTANDARD = "LVCMOS33"; ##purple io5
